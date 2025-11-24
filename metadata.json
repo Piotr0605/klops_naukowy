@@ -1,0 +1,5 @@
+{
+  "name": "Klops naukowy",
+  "description": "Inteligentny asystent nauki z harmonogramem, fiszkami i quizami. Obsługiwany przez Gemini.",
+  "requestFramePermissions": []
+}
