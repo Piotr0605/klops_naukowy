@@ -52,7 +52,7 @@ const HomeView: React.FC<{
     <div className="flex flex-col items-center justify-center min-h-[80vh] gap-8 relative z-20">
       <div className="text-center max-w-2xl animate-float">
         <h2 className="text-5xl md:text-7xl font-serif text-white mb-6 drop-shadow-[0_0_15px_rgba(255,0,127,0.5)]">
-          Ucz się <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-hot-pink via-purple-400 to-gold">Seksownie & Mądrze</span>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-hot-pink via-purple-400 to-gold">Do boju</span>
         </h2>
         <p className="text-lg text-pink-100 font-light tracking-wide">
           Wgraj notatki. Odbierz plan. Zdominuj materiał.
