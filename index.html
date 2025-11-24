@@ -26,11 +26,21 @@
             animation: {
               'float': 'float 6s ease-in-out infinite',
               'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'sway': 'sway 8s ease-in-out infinite',
+              'breathe': 'breathe 5s ease-in-out infinite',
             },
             keyframes: {
               float: {
                 '0%, 100%': { transform: 'translateY(0)' },
                 '50%': { transform: 'translateY(-20px)' },
+              },
+              sway: {
+                '0%, 100%': { transform: 'rotate(-2deg)' },
+                '50%': { transform: 'rotate(2deg)' },
+              },
+              breathe: {
+                '0%, 100%': { opacity: '0.3', transform: 'scale(1)' },
+                '50%': { opacity: '0.6', transform: 'scale(1.05)' },
               }
             }
           }
@@ -43,13 +53,16 @@
     "react": "https://aistudiocdn.com/react@^19.2.0",
     "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
     "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6",
-    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0"
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6"
   }
 }
 </script>
 </head>
   <body class="bg-midnight text-white overflow-x-hidden">
     <div id="root"></div>
+    <!-- Kluczowa naprawa: Dodanie skryptu wejściowego. -->
+    <!-- Używamy relatywnej ścieżki ./ aby Vite poprawnie to obsłużył. -->
+    <script type="module" src="./index.tsx"></script>
   </body>
 </html>
