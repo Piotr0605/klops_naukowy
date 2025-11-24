@@ -1,6 +1,7 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { StudyPlanResponse } from "../types";
 
+// Use process.env.API_KEY as per guidelines.
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 // Define the response schema using the proper Enum values from @google/genai

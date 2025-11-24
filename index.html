@@ -47,22 +47,22 @@
         }
       }
     </script>
-  <script type="importmap">
+<script type="importmap">
 {
   "imports": {
     "react": "https://aistudiocdn.com/react@^19.2.0",
     "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
     "react/": "https://aistudiocdn.com/react@^19.2.0/",
     "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
-    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6"
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1",
+    "vite": "https://aistudiocdn.com/vite@^7.2.4"
   }
 }
 </script>
 </head>
   <body class="bg-midnight text-white overflow-x-hidden">
     <div id="root"></div>
-    <!-- Kluczowa naprawa: Dodanie skryptu wejściowego. -->
-    <!-- Używamy relatywnej ścieżki ./ aby Vite poprawnie to obsłużył. -->
-    <script type="module" src="./index.tsx"></script>
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
